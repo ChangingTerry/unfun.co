@@ -1,0 +1,80 @@
+==================================================================
+https://keybase.io/unfunco
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://unfun.co
+  * I am unfunco (https://keybase.io/unfunco) on keybase.
+  * I have a public key with fingerprint 9003 455D C511 D751 8571  5B8F 59D3 2E97 BE2E 8420
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01016944fed7ee60889c940538782f3651dc827575c01e225009899affced1e4a7790a",
+            "fingerprint": "9003455dc511d75185715b8f59d32e97be2e8420",
+            "host": "keybase.io",
+            "key_id": "59d32e97be2e8420",
+            "kid": "01016944fed7ee60889c940538782f3651dc827575c01e225009899affced1e4a7790a",
+            "uid": "c3512476636aaca6c284449b1a30bc19",
+            "username": "unfunco"
+        },
+        "revoke": {
+            "sig_ids": [
+                "9f9bdf1053bf9bd74ae50e46f5a1c35b1c70ac26970c17ee6787834d82f674050f"
+            ]
+        },
+        "service": {
+            "hostname": "unfun.co",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1471369521,
+    "expire_in": 157680000,
+    "prev": "642da06c359af7ff365ec1074e4557b51bdd47a8ed1e92005e50e1f12c70da0a",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.55
+Comment: https://keybase.io/crypto
+
+yMN5AnicrZJ9TFVlHMe5gDRwhENhuLaEg5jk7Xqec8/rnUBElJtCOly8Jp6X58AJ
+uOd235CAkhdjgTN3eyFublBi4BIowQ3EFJCcCg1DafRCyusGQ4iGjhCk57Da+qM/
+e/45z3n2/X1/n9/3eXr9vTz8dKl3DNVXDOWhur7ueYdHcutBUIgJqlSAmQqxHLj+
+gbkStNkzcxQJM2E4wAHNkaQMJQZCGmdZTuRInDKyDEvIRpoCksgSDMVQIg4gQVA4
+zrEcx8uyCCUASZ5hOJzH9JismLOg1WJVzHZky+G4kaQoSaQAkBgKsBQDKIGVKU4y
+EpBjBEhAliRwVJit2rQKBCfwNmhQVHSGfjLX8f5D/z9zO9btRCMFCJKhaSPN8yJP
+iwRLkiQnAN6ICyLgNKENWs18HkRqh1l2mEUVK9ZjVuhUc6AWq03JQsw2zJSOcTIn
+SDJANIK2Y0geUjgkaZniAeokAJHBeZGgOQYXgYbPIGojKSFymkFD4DL2BvJGDZ2K
+uG6uhfTv5gZRi8liVe2qqOai02y73WIzaUT2Aosmy4dC5t8GmYJiltD1oAontNoU
+1YyZAFKKdkVzBCQDjDRHEUCPwaMWxQozFU1BMTSLo6X1gU5kSZOExOM0mgDlyMha
+ylAEOENCdNWMQAFBkkiGZ7WAOQLHKW1qIAMCjYsKtbRt8C2zirwJxMlnIU+Umpm3
+O6wQK+7pzvD20Pl5+Gzw1N6th5/vpn9e8607AWsv+fbrlioSGnOtm5rlNfdYWsvV
+Yz2lo9dmRmIvLy+rsOXRbysdNXuEgIGCW0dqg9+JmFDHSrwsh792V7b27v4Rv5uX
+vv2D1ciQpp3hnvs3w76Bx0E751YGc+pc4X4PzjlSsPyflM9atoZcjPnkVFzMtCvd
+fXfw+KA6WTY+37jw0NQ+FnwCXJB+cb0Gn5wPny7aez0lNK6iojL7wdwO1+74jm9+
+fhyb798ajR263F7ik1CzLa49MH5mTpcID/UHf9mVmuhXVxXdqr/gs5o0OXXy28zO
+5qfb5V+7EhfuFdclPwo7qiwtvBuyq7xt/vabU3nv3Z94vtrXa3AmqGDZv7OuY2I4
+9uI+dTFjdvBA8A8ucup0DxFjaKtq8JwdOnedGodl/jnZ1b2lbSu/116x6JPde7+r
+Cvq0lO6/3fL+8pON5WEBCV9Eru4bvRk1W7T/5lLjQuWZs25hscDuTN3+evCl0aT6
+rK6B718+/HatM+3zSPuBrafJU9M19YQuOiXDsHh1ePXhfJP+2Hk+xRZR1tZ7HD71
+bFRx1bbuohNi18cjNUk7HH2DSbacxhtbfArvG78aT+3sefXSC5vzOtte3LLr7HPe
+ylL4Rw3lLRFw4yvNS1TTnnqfP25IgbZrSdmJscQR4cMNm9Ya/tSZz7gEd2Rg8Mik
+d7zVuTw8VOEKPRhREvXMZFpI2L3Kob8AN8Dfqw==
+=WQ9I
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/unfunco
+
+==================================================================
