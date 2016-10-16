@@ -1,0 +1,73 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage">
+<head dir="ltr">
+    <meta charset="utf-8" />
+    <meta content="noodp, noydir, noindex, nofollow" name="robots" />
+    <title>Baby countdown &mdash; Daniel Morris</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="This is what I know about being gigantic." name="description" />
+    <link href="/css/unfunco.css" rel="stylesheet" type="text/css" />
+</head>
+<body dir="ltr">
+    <header role="presentation">
+        <div class="contained">
+            <h1>Daniel Morris</h1>
+            <div class="headline">This is what I know about being a father&hellip;</div>
+        </div>
+    </header>
+    <main role="main">
+        <div class="contained">
+        <section id="essays">
+            <h2>Baby countdown</h2>
+        </section>
+        <section id="baby-countdown">
+            <h2>Daniel has to watch or deliver the baby of his own child in&hellip;</h2>
+            <p id="countdown"></p>
+        </section>
+        </div>
+    </main>
+    <footer role="contentinfo">
+        <div class="contained">
+            <p class="copyright">Copyright &copy; 2016 Daniel Morris.<br />Fingerprint: 9003 455D C511 D751 8571  5B8F 59D3 2E97 BE2E 8420</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function getTime(deadline) {
+            // noinspection JSCheckFunctionSignatures
+            var t = Date.parse(deadline) - Date.parse(new Date());
+
+            var s = Math.floor((t / 1000) % 60),
+                m = Math.floor((t / 1000 * 60) % 60),
+                h = Math.floor((t / 1000 * 60  * 60) % 24),
+                d = Math.floor(t  /(1000 * 60  * 60  * 24));
+
+            return {
+                'total': t,
+                'seconds': s,
+                'minutes': m,
+                'hours': h,
+                'days': d
+            };
+        }
+
+        function initialiseTimer(divId) {
+            var deadline = '2019-10-31 23:59:59';
+            var timeRemaining = getTime(deadline);
+            var countdown = document.getElementById(divId);
+            var initialiseCountdownInterval = setInterval(function() {
+                var countdownTimer = getTime(timeRemaining);
+                console.log(timeRemaining);
+                countdown.innerHTML = countdownTimer.days + ' days, ' +
+                   countdownTimer.hours + ' hours, ' +
+                   countdownTimer.minutes + ' minutes and ' +
+                   countdownTimer.seconds + ' seconds.';
+
+                if (countdownTimer <= 0) {
+                    clearInterval(initialiseCountdownInterval);
+                }
+            }, 1000);
+        }
+        initialiseTimer('baby-countdown');
+    </script>
+    </body>
+</html>
