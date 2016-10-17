@@ -32,42 +32,71 @@
         </div>
     </footer>
     <script type="text/javascript">
-        function getTime(deadline) {
-            // noinspection JSCheckFunctionSignatures
-            var t = Date.parse(deadline) - Date.parse(new Date());
 
-            var s = Math.floor((t / 1000) % 60),
-                m = Math.floor((t / 1000 * 60) % 60),
-                h = Math.floor((t / 1000 * 60  * 60) % 24),
-                d = Math.floor(t  /(1000 * 60  * 60  * 24));
+    var countdown = (function() {
 
-            return {
-                'total': t,
-                'seconds': s,
-                'minutes': m,
-                'hours': h,
-                'days': d
-            };
+        var div = document.getElementById('baby-countdown');
+        var deadline = new Date(2019,9,31, 23, 59, 59);        
+        var timer;
+
+        function getDiff() {
+            
+            var now = (new Date()).getTime();
+            var seconds = (deadline.getTime() - now) / 1000;
+            var minutes = Math.floor(seconds/60);
+            var hours = Math.floor(minutes/60);
+            var days = Math.floor(hours/24);
+
+            hours = hours-(days*24);
+            minutes = minutes-(days*24*60)-(hours*60);
+            seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+
+            return  {
+                days:days,
+                hours:hours,
+                minutes:minutes,
+                seconds:seconds
+            }
         }
 
-        function initialiseTimer(divId) {
-            var deadline = '2019-10-31 23:59:59';
-            var timeRemaining = getTime(deadline);
-            var countdown = document.getElementById(divId);
-            var initialiseCountdownInterval = setInterval(function() {
-                var countdownTimer = getTime(timeRemaining);
-                console.log(timeRemaining);
-                countdown.innerHTML = countdownTimer.days + ' days, ' +
-                   countdownTimer.hours + ' hours, ' +
-                   countdownTimer.minutes + ' minutes and ' +
-                   countdownTimer.seconds + ' seconds.';
+        function updateDiv() {
+            var diff = getDiff();
+            
+            div.innerHTML = diff.days + ' days, ' +
+                   diff.hours + ' hours, ' +
+                   diff.minutes + ' minutes and ' +
+                   diff.seconds.toFixed(0) + ' seconds.';
 
-                if (countdownTimer <= 0) {
-                    clearInterval(initialiseCountdownInterval);
-                }
-            }, 1000);
         }
-        initialiseTimer('baby-countdown');
+
+        function doTick(){
+            if ((new Date()) > deadline) {
+                stop();
+                //Do something when timer finishes
+                return;
+            }
+            updateDiv();
+        }
+
+        function run(){
+            setInterval(doTick, 1000);
+        }
+
+        function stop() {
+            if (timer) {
+                clearInterval(timer);
+            }
+        }
+
+
+        return {
+            run:run,
+            stop:stop
+        }
+    })();
+
+    countdown.run();
+
     </script>
     </body>
 </html>
